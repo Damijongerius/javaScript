@@ -44,6 +44,27 @@ for(let t = 0; t < 100; t++){
 console.log(Hoogste+ " " + Naam);
 
 // opdracht 14
+//opdracht 15
+let midden = 0;
+let middenn = 0
+
+for(let i = 0; i < length; i++){
+   midden += sarah[i];
+   middenn += sofie[i];
+}
+
+if(midden >= middenn){
+    console.log(midden/5+ "sarah");
+    if(midden >= 7){
+        console.log("goed gedaan")
+    }
+}else{
+    console.log(middenn/5+ "sofie");
+        if(midden >= 7){
+        console.log("goed gedaan")
+    }
+}
+
 
 
 
