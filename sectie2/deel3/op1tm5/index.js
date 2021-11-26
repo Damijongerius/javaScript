@@ -16,4 +16,4 @@ console.log(z+y-x);
 console.log(x+String(z)+y);
 
 //opdracht5
-console.log(x+"44");
+console.log(math.pow(x+y,z));
