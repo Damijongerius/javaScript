@@ -1,5 +1,9 @@
-function zin(dier){
-  console.log(`Ik ben geen ${dier}`);
+function school (age, opleiding){
+  if(age >= 10 && opleiding != basisschool){
+    return true;
+  }else{
+    return false;
+  }
 }
 
-const dier = zin(schaap);
+const appel = school(15, mbo);

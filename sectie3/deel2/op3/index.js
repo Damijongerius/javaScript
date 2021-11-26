@@ -1,0 +1,1 @@
+console.log(`dier 1: ${arrayOne[2]} dier 2: ${arrayOne[3]}`);
