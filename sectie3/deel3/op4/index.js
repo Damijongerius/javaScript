@@ -3,10 +3,11 @@ const informatie = {
     lastName: 'de vries',
     age: 2021 - 1988,
     job: 'teacher',
+    timeJob: 8,
     friends: ['koe', 'vos'],
     getFullName: function(){
         return `${this.firstName} ${this.lastName}`;
     }
 }
 
-console.log(`my job is being a ${informatie.job}`);
+console.log(`${information.timeJob}`);
