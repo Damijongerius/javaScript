@@ -6,4 +6,4 @@ const objectOne = {
         return `My name is ${name} and I am a ${job}.`;
     }
 }
-console.log(objectOne['getJobAndName']('piet Janssens', 'fighter'));
+console.log(objectOne['getJobAndName'](objectOne.firstName, objectOne.job));
