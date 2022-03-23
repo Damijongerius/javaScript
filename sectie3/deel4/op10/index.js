@@ -1,0 +1,1 @@
+//het begint bij 50 dus doet hij niks want als het onder 10 is diet hij wat

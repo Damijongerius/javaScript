@@ -1,0 +1,108 @@
+@font-face {
+    font-family: start;
+    src: url(fonts/start.ttf);
+}
+
+body{
+    background-image: url("img/backgrounds/gamec.jpg");
+    background-size: 1920px;
+    background-position-x: center;
+    background-position-y: 100vh;
+}
+
+.score-box{
+    background-color: white;
+    border: solid 2px;
+    border-radius: 2px;
+    width: 40vh;
+    font-size: 2vh;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 27vh 13vh;
+}
+
+.score-box > div{
+    border: solid 1px;
+    display: grid;
+    justify-content: center;
+    margin: 0.1vh;
+}
+
+.dobbel-box{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+}
+
+.dobbel-box{
+    display:grid;
+    justify-content: center;
+}
+
+.dobbel-box > div{
+    width: 10vw;
+    max-width: 100px;
+    max-height: 100px;
+    height: 10vw;
+    border: solid 3px black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.dobbel-box > div > div{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.dobbel{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: stretch;
+}
+
+.dot{
+    border: solid 8px black;
+    border-radius: 100px;
+
+}
+
+.dot2{
+    border: solid 6px black;
+    border-radius: 100px;
+}
+
+.steen1{
+}
+
+.dobbel-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0vh;
+}
+
+.roll-box{
+    border: solid 1px;
+    width:70vw;
+    height: 5vh;
+    display: grid;
+    margin: 2vh
+}
+
+.roll{
+    font-family: start;
+    font-size: 3vh;
+}
+
+
+.gam{
+    display:grid;
+    justify-content: center;
+}

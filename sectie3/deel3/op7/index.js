@@ -10,4 +10,4 @@ const objectOne = {
 }
 
 console.log(objectOne.getAge());
-//name en job is niet gezeg
+//name en job is niet gezegd

@@ -1,0 +1,120 @@
+@font-face {
+    font-family: start;
+    src: url(fonts/start.ttf);
+}
+
+
+*{
+}
+
+body{
+    background-image: url("img/backgrounds/startscreen.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 1620px;
+}
+
+.button-div{
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.START{
+ width: 25vw;
+ height: 10vh;
+ border: solid 2px orange;
+ border-radius: 5%;
+ font-family: start;
+ font-size: 200%;
+ background-color: white;
+ display: grid;
+ justify-content: center;
+ align-items: center;
+ color: black;
+}
+
+.START:hover{
+    height: 10vh;
+    width: 25vw;
+    animation-name: stretch;
+    animation-duration: 1s; 
+    animation-timing-function: ease-out; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes stretch {
+    0% {
+      transform: scale(1);
+      background-color: white;
+      border-radius: 0%;
+    }
+    50% {
+      background-color: red;
+    }
+    100% {
+      transform: scale(1.2);
+      background-color: yellow;
+    }
+  }
+
+.dobbel-box > div{
+    width: 10vw;
+    max-width: 100px;
+    max-height: 100px;
+    height: 10vw;
+    border: solid 3px black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(33vh)
+    }
+  }
+
+
+
+.dobbel-box > div > div{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.dobbel{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: stretch;
+}
+
+
+.dot{
+    border: solid 8px black;
+    border-radius: 100px;
+
+}
+
+.dot2{
+    border: solid 6px black;
+    border-radius: 100px;
+}
+
+.dobbel-box{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh 0vh;
+}
