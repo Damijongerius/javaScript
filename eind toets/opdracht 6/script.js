@@ -1,0 +1,39 @@
+let elements = 1;
+
+
+document.getElementsByClassName("Create_elements")[0].onclick = Create;
+
+function Create(){
+    if(elements<50)
+    {
+    
+       let div = document.createElement('div');
+       div.innerHTML = elements;
+       div.style.width = "13.7vw";
+       div.style.height = "13.7vw";
+       div.className = "divs"; 
+       color(div);
+       document.getElementsByClassName('element-box')[0].appendChild(div);
+       elements++
+    }
+}
+
+function color(div)
+{
+   a = Math.floor((Math.random() * 5) + 1);
+    switch(a){
+        case 1: div.style.backgroundColor =  'red';
+        break;
+        case 2: div.style.backgroundColor =  'green';
+        break;
+        case 3: div.style.backgroundColor =  'yellow';
+        break;
+        case 4: div.style.backgroundColor =  'purple';
+        break;
+        case 5: div.style.backgroundColor =  'blue';
+        break;
+        default:
+            div.style.backgroundColor =  'pink';
+    }
+}
+
